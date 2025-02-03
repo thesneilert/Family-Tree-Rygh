@@ -10,25 +10,25 @@ FamilyTree.templates.tommy_female.field_2 =
 var family = new FamilyTree(document.getElementById("tree"), {
   mode: "dark",
   nodeMenu: {
-    edit: { text: "Edit" },
-    details: { 
-      text: "Details", 
-      show: function (sender, args) {
-        var personDetails = args.data;
-        var detailsHtml = "<ul>";
-        for (var key in personDetails) {
-          if (personDetails.hasOwnProperty(key)) {
-            if (personDetails[key]) {
-              detailsHtml += "<li><strong>" + key + ":</strong> " + personDetails[key] + "</li>";
-            } else {
-              detailsHtml += "<li><strong>" + key + ":</strong> N/A</li>";
-            }
-          }
-        }
-        detailsHtml += "</ul>";
-        document.getElementById('sideMenu').innerHTML = detailsHtml;
-      }
-    },
+    // edit: { text: "Edit" },
+    // details: { 
+    //   text: "Details", 
+    //   show: function (sender, args) {
+    //     var personDetails = args.data;
+    //     var detailsHtml = "<ul>";
+    //     for (var key in personDetails) {
+    //       if (personDetails.hasOwnProperty(key)) {
+    //         if (personDetails[key]) {
+    //           detailsHtml += "<li><strong>" + key + ":</strong> " + personDetails[key] + "</li>";
+    //         } else {
+    //           detailsHtml += "<li><strong>" + key + ":</strong> N/A</li>";
+    //         }
+    //       }
+    //     }
+    //     detailsHtml += "</ul>";
+    //     document.getElementById('sideMenu').innerHTML = detailsHtml;
+    //   }
+    // },
   },
   nodeBinding: {
     field_0: "Navn",
@@ -63,7 +63,7 @@ family.load(
       pids: [0],
       mid: [3],
       fid: [2],
-      gender: "male",
+      gender: "Mann",
       Navn: "Per Henrik Rygh",
       Fødselsdato: "1929-03-12",
       Dødsdato: "2013-03-22",
