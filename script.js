@@ -1,8 +1,8 @@
-FamilyTree.templates.tommy_male.field_2 =
+FamilyTree.templates.tommy_Mann.field_2 =
   "<text " +
   FamilyTree.attr.width +
   ' ="150" style="font-size: 14px;" fill="#ffffff" x="150" y="65" text-anchor="start">{val}</text>';
-FamilyTree.templates.tommy_female.field_2 =
+FamilyTree.templates.tommy_Kvinne.field_2 =
   "<text " +
   FamilyTree.attr.width +
   ' ="150" style="font-size: 14px;" fill="#ffffff" x="150" y="65" text-anchor="start">{val}</text>';
@@ -10,25 +10,25 @@ FamilyTree.templates.tommy_female.field_2 =
 var family = new FamilyTree(document.getElementById("tree"), {
   mode: "dark",
   nodeMenu: {
-    // edit: { text: "Edit" },
-    // details: { 
-    //   text: "Details", 
-    //   show: function (sender, args) {
-    //     var personDetails = args.data;
-    //     var detailsHtml = "<ul>";
-    //     for (var key in personDetails) {
-    //       if (personDetails.hasOwnProperty(key)) {
-    //         if (personDetails[key]) {
-    //           detailsHtml += "<li><strong>" + key + ":</strong> " + personDetails[key] + "</li>";
-    //         } else {
-    //           detailsHtml += "<li><strong>" + key + ":</strong> N/A</li>";
-    //         }
-    //       }
-    //     }
-    //     detailsHtml += "</ul>";
-    //     document.getElementById('sideMenu').innerHTML = detailsHtml;
-    //   }
-    // },
+    edit: { text: "Edit" },
+    details: { 
+      text: "Details", 
+      show: function (sender, args) {
+        var personDetails = args.data;
+        var detailsHtml = "<ul>";
+        for (var key in personDetails) {
+          if (personDetails.hasOwnProperty(key)) {
+            if (personDetails[key]) {
+              detailsHtml += "<li><strong>" + key + ":</strong> " + personDetails[key] + "</li>";
+            } else {
+              detailsHtml += "<li><strong>" + key + ":</strong> N/A</li>";
+            }
+          }
+        }
+        detailsHtml += "</ul>";
+        document.getElementById('sideMenu').innerHTML = detailsHtml;
+      }
+    },
   },
   nodeBinding: {
     field_0: "Navn",
@@ -76,7 +76,7 @@ family.load(
     {
         id: 2,
         pids: [3],
-        gender: "male",
+        gender: "Mann",
         Navn: "Per Kristian Rygh",
         Fødselsdato: "1894-11-29",
         Dødsdato: "1975-02-14",
@@ -89,7 +89,7 @@ family.load(
       {
         id: 3,
         pids: [2],
-        gender: "female",
+        gender: "Kvinne",
         Navn: "Iris Kiær Rygh",
         Fødselsdato: "1894-10-28",
         Dødsdato: "1982-07-31",

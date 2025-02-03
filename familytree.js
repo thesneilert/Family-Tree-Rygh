@@ -937,10 +937,10 @@ var FamilyTree = function (e, t) {
         subTreeConfig: { siblingSeparation: 7, columns: 1 },
       }),
       e && e.template
-        ? ((t.tags.male = { template: e.template + "_male" }),
-          (t.tags.female = { template: e.template + "_female" }))
-        : ((t.tags.male = { template: t.template + "_male" }),
-          (t.tags.female = { template: t.template + "_female" })),
+        ? ((t.tags.Mann = { template: e.template + "_Mann" }),
+          (t.tags.Kvinne = { template: e.template + "_Kvinne" }))
+        : ((t.tags.Mann = { template: t.template + "_Mann" }),
+          (t.tags.Kvinne = { template: t.template + "_Kvinne" })),
       t
     );
   }),
@@ -8883,18 +8883,18 @@ var FamilyTree = function (e, t) {
   (FamilyTree.templates.dot.up = ""),
   (FamilyTree.templates.john = Object.assign({}, FamilyTree.templates.base)),
   (FamilyTree.templates.john.nodeMenuButton = `<use ${FamilyTree.attr.control_node_menu_id}="{id}" x="90" y="50" xlink:href="#base_node_menu"/>`),
-  (FamilyTree.templates.john.defs = `<style>                          \n                                        .{randId} .bft-edit-form-header, .{randId} .bft-img-button{\n                                            background-color: #aeaeae;\n                                        }\n                                        .{randId}.male .bft-edit-form-header, .{randId}.male .bft-img-button{\n                                            background-color: #039BE5;\n                                        }        \n                                        .{randId}.male div.bft-img-button:hover{\n                                            background-color: #F57C00;\n                                        }\n                                        .{randId}.female .bft-edit-form-header, .{randId}.female .bft-img-button{\n                                            background-color: #F57C00;\n                                        }        \n                                        .{randId}.female div.bft-img-button:hover{\n                                            background-color: #039BE5;\n                                        }\n                                    </style>\n                                    <clipPath id="john_img_0"><rect  x="6" y="6" rx="54" ry="54" width="108" height="108"></rect></clipPath>\n                                    ${FamilyTree.gradientCircleForDefs(
+  (FamilyTree.templates.john.defs = `<style>                          \n                                        .{randId} .bft-edit-form-header, .{randId} .bft-img-button{\n                                            background-color: #aeaeae;\n                                        }\n                                        .{randId}.Mann .bft-edit-form-header, .{randId}.Mann .bft-img-button{\n                                            background-color: #039BE5;\n                                        }        \n                                        .{randId}.Mann div.bft-img-button:hover{\n                                            background-color: #F57C00;\n                                        }\n                                        .{randId}.Kvinne .bft-edit-form-header, .{randId}.Kvinne .bft-img-button{\n                                            background-color: #F57C00;\n                                        }        \n                                        .{randId}.Kvinne div.bft-img-button:hover{\n                                            background-color: #039BE5;\n                                        }\n                                    </style>\n                                    <clipPath id="john_img_0"><rect  x="6" y="6" rx="54" ry="54" width="108" height="108"></rect></clipPath>\n                                    ${FamilyTree.gradientCircleForDefs(
     "circle",
     "#aeaeae",
     60,
     5
   )}\n                                    ${FamilyTree.gradientCircleForDefs(
-    "male_circle",
+    "Mann_circle",
     "#039BE5",
     60,
     5
   )}\n                                    ${FamilyTree.gradientCircleForDefs(
-    "female_circle",
+    "Kvinne_circle",
     "#F57C00",
     60,
     5
@@ -8916,31 +8916,31 @@ var FamilyTree = function (e, t) {
     rect: null,
   }),
   (FamilyTree.templates.john.size = [120, 120]),
-  (FamilyTree.templates.john_male = Object.assign(
+  (FamilyTree.templates.john_Mann = Object.assign(
     {},
     FamilyTree.templates.john
   )),
-  (FamilyTree.templates.john_male.node +=
-    '<use x="0" y="0" xlink:href="#male_circle" />'),
-  (FamilyTree.templates.john_male.ripple = {
+  (FamilyTree.templates.john_Mann.node +=
+    '<use x="0" y="0" xlink:href="#Mann_circle" />'),
+  (FamilyTree.templates.john_Mann.ripple = {
     radius: 60,
     color: "#039BE5",
     rect: null,
   }),
-  (FamilyTree.templates.john_female = Object.assign(
+  (FamilyTree.templates.john_Kvinne = Object.assign(
     {},
     FamilyTree.templates.john
   )),
-  (FamilyTree.templates.john_female.node +=
-    '<use x="0" y="0" xlink:href="#female_circle" />'),
-  (FamilyTree.templates.john_female.ripple = {
+  (FamilyTree.templates.john_Kvinne.node +=
+    '<use x="0" y="0" xlink:href="#Kvinne_circle" />'),
+  (FamilyTree.templates.john_Kvinne.ripple = {
     radius: 60,
     color: "#F57C00",
     rect: null,
   }),
   (FamilyTree.templates.tommy = Object.assign({}, FamilyTree.templates.base)),
   (FamilyTree.templates.tommy.defs =
-    "<style>                          \n                                        .{randId} .bft-edit-form-header, .{randId} .bft-img-button{\n                                            background-color: #aeaeae;\n                                        }\n                                        .{randId}.male .bft-edit-form-header, .{randId}.male .bft-img-button{\n                                            background-color: #039BE5;\n                                        }        \n                                        .{randId}.male div.bft-img-button:hover{\n                                            background-color: #F57C00;\n                                        }\n                                        .{randId}.female .bft-edit-form-header, .{randId}.female .bft-img-button{\n                                            background-color: #F57C00;\n                                        }        \n                                        .{randId}.female div.bft-img-button:hover{\n                                            background-color: #039BE5;\n                                        }\n                                    </style>"),
+    "<style>                          \n                                        .{randId} .bft-edit-form-header, .{randId} .bft-img-button{\n                                            background-color: #aeaeae;\n                                        }\n                                        .{randId}.Mann .bft-edit-form-header, .{randId}.Mann .bft-img-button{\n                                            background-color: #039BE5;\n                                        }        \n                                        .{randId}.Mann div.bft-img-button:hover{\n                                            background-color: #F57C00;\n                                        }\n                                        .{randId}.Kvinne .bft-edit-form-header, .{randId}.Kvinne .bft-img-button{\n                                            background-color: #F57C00;\n                                        }        \n                                        .{randId}.Kvinne div.bft-img-button:hover{\n                                            background-color: #039BE5;\n                                        }\n                                    </style>"),
   (FamilyTree.templates.tommy.field_0 =
     "<text " +
     FamilyTree.attr.width +
@@ -8951,29 +8951,29 @@ var FamilyTree = function (e, t) {
     '="150" style="font-size: 14px;" fill="#ffffff" x="10" y="65" text-anchor="start">{val}</text>'),
   (FamilyTree.templates.tommy.node =
     '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill="#aeaeae" stroke="#aeaeae" rx="7" ry="7"></rect>'),
-  (FamilyTree.templates.tommy_male = Object.assign(
+  (FamilyTree.templates.tommy_Mann = Object.assign(
     {},
     FamilyTree.templates.tommy
   )),
-  (FamilyTree.templates.tommy_male.node =
+  (FamilyTree.templates.tommy_Mann.node =
     '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill="#039BE5" stroke="#aeaeae" rx="7" ry="7"></rect>'),
-  (FamilyTree.templates.tommy_female = Object.assign(
+  (FamilyTree.templates.tommy_Kvinne = Object.assign(
     {},
     FamilyTree.templates.tommy
   )),
-  (FamilyTree.templates.tommy_female.node =
+  (FamilyTree.templates.tommy_Kvinne.node =
     '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill="#F57C00" stroke="#aeaeae" rx="7" ry="7"></rect>'),
   (FamilyTree.templates.hugo = Object.assign({}, FamilyTree.templates.base)),
   (FamilyTree.templates.hugo.up =
     '<use x="200" y="10" xlink:href="#hugo_up"/>'),
   (FamilyTree.templates.hugo.nodeMenuButton = `<use x="225" y="10" ${FamilyTree.attr.control_node_menu_id}="{id}" xlink:href="#hugo_node_menu"/>`),
-  (FamilyTree.templates.hugo.defs = `<clipPath id="hugo_img_0"><rect id="hugo_img_0_stroke" stroke-width="2" stroke="#fff" x="90" y="-5" rx="25" ry="25" width="70" height="70"></rect></clipPath>\n                                    <linearGradient id="hugo_grad_female" x1="0%" y1="0%" x2="100%" y2="0%">\n                                        <stop offset="0%" style="stop-color:#FF8024;stop-opacity:1" />\n                                        <stop offset="100%" style="stop-color:#FF46A3;stop-opacity:1" />\n                                    </linearGradient>\n                                    <linearGradient id="hugo_grad_male" x1="0%" y1="0%" x2="100%" y2="0%">\n                                        <stop offset="0%" style="stop-color:#00D3A5;stop-opacity:1" />\n                                        <stop offset="100%" style="stop-color:#00A7D4;stop-opacity:1" />\n                                    </linearGradient>\n                                    <linearGradient id="hugo_grad" x1="0%" y1="0%" x2="100%" y2="0%">\n                                        <stop offset="0%" style="stop-color:#D0D0D0;stop-opacity:1" />\n                                        <stop offset="100%" style="stop-color:#909090;stop-opacity:1" />\n                                    </linearGradient>\n                                    <g id="hugo_up">\n                                        <circle cx="12" cy="12" r="15" fill="transparent" ></circle>\n                                        ${FamilyTree.icon.ft(
+  (FamilyTree.templates.hugo.defs = `<clipPath id="hugo_img_0"><rect id="hugo_img_0_stroke" stroke-width="2" stroke="#fff" x="90" y="-5" rx="25" ry="25" width="70" height="70"></rect></clipPath>\n                                    <linearGradient id="hugo_grad_Kvinne" x1="0%" y1="0%" x2="100%" y2="0%">\n                                        <stop offset="0%" style="stop-color:#FF8024;stop-opacity:1" />\n                                        <stop offset="100%" style="stop-color:#FF46A3;stop-opacity:1" />\n                                    </linearGradient>\n                                    <linearGradient id="hugo_grad_Mann" x1="0%" y1="0%" x2="100%" y2="0%">\n                                        <stop offset="0%" style="stop-color:#00D3A5;stop-opacity:1" />\n                                        <stop offset="100%" style="stop-color:#00A7D4;stop-opacity:1" />\n                                    </linearGradient>\n                                    <linearGradient id="hugo_grad" x1="0%" y1="0%" x2="100%" y2="0%">\n                                        <stop offset="0%" style="stop-color:#D0D0D0;stop-opacity:1" />\n                                        <stop offset="100%" style="stop-color:#909090;stop-opacity:1" />\n                                    </linearGradient>\n                                    <g id="hugo_up">\n                                        <circle cx="12" cy="12" r="15" fill="transparent" ></circle>\n                                        ${FamilyTree.icon.ft(
     24,
     24,
     "#fff",
     0,
     0
-  )}\n                                    </g>\n                                    <g id="hugo_node_menu" style="cursor:pointer;"><rect x="0" y="0" fill="transparent" width="22" height="22"></rect><circle cx="11" cy="4" r="2" fill="#ffffff"></circle><circle cx="11" cy="11" r="2" fill="#ffffff"></circle><circle cx="11" cy="18" r="2" fill="#ffffff"></circle></g>\n                                    <style>\n                                        .{randId} .bft-edit-form-header{\n                                            background: linear-gradient(90deg, #D0D0D0 0%, #909090 100%);\n                                        }\n                                        .{randId}.male .bft-edit-form-header{\n                                            background: linear-gradient(90deg, #00D3A5 0%, #00A7D4 100%);\n                                        }\n                                        .{randId}.female .bft-edit-form-header{\n                                            background: linear-gradient(90deg, #FF8024 0%, #FF46A3 100%);\n                                        }  \n                                        .{randId} .bft-img-button{\n                                            background-color: #909090;\n                                        }      \n                                        .{randId} .bft-img-button:hover{\n                                            background-color: #D0D0D0;\n                                        }\n                                        .{randId}.male .bft-img-button{\n                                            background-color: #00A7D4;\n                                        }      \n                                        .{randId}.male .bft-img-button:hover{\n                                            background-color: #00D3A5;\n                                        }\n                                        .{randId}.female .bft-img-button{\n                                            background-color: #FF46A3;\n                                        }      \n                                        .{randId}.female .bft-img-button:hover{\n                                            background-color: #FF8024;\n                                        }\n                                        \n                                    </style>`),
+  )}\n                                    </g>\n                                    <g id="hugo_node_menu" style="cursor:pointer;"><rect x="0" y="0" fill="transparent" width="22" height="22"></rect><circle cx="11" cy="4" r="2" fill="#ffffff"></circle><circle cx="11" cy="11" r="2" fill="#ffffff"></circle><circle cx="11" cy="18" r="2" fill="#ffffff"></circle></g>\n                                    <style>\n                                        .{randId} .bft-edit-form-header{\n                                            background: linear-gradient(90deg, #D0D0D0 0%, #909090 100%);\n                                        }\n                                        .{randId}.Mann .bft-edit-form-header{\n                                            background: linear-gradient(90deg, #00D3A5 0%, #00A7D4 100%);\n                                        }\n                                        .{randId}.Kvinne .bft-edit-form-header{\n                                            background: linear-gradient(90deg, #FF8024 0%, #FF46A3 100%);\n                                        }  \n                                        .{randId} .bft-img-button{\n                                            background-color: #909090;\n                                        }      \n                                        .{randId} .bft-img-button:hover{\n                                            background-color: #D0D0D0;\n                                        }\n                                        .{randId}.Mann .bft-img-button{\n                                            background-color: #00A7D4;\n                                        }      \n                                        .{randId}.Mann .bft-img-button:hover{\n                                            background-color: #00D3A5;\n                                        }\n                                        .{randId}.Kvinne .bft-img-button{\n                                            background-color: #FF46A3;\n                                        }      \n                                        .{randId}.Kvinne .bft-img-button:hover{\n                                            background-color: #FF8024;\n                                        }\n                                        \n                                    </style>`),
   (FamilyTree.templates.hugo.img_0 =
     '<use xlink:href="#hugo_img_0_stroke" /><image preserveAspectRatio="xMidYMid slice" clip-path="url(#hugo_img_0)" xlink:href="{val}"  x="90" y="-5"  width="70" height="70"></image>'),
   (FamilyTree.templates.hugo.field_0 =
@@ -8986,18 +8986,18 @@ var FamilyTree = function (e, t) {
     '="230" style="font-size: 14px;" fill="#ffffff" x="125" y="105" text-anchor="middle">{val}</text>'),
   (FamilyTree.templates.hugo.node =
     '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill=url(#hugo_grad) stroke="#aeaeae" rx="7" ry="7"></rect>'),
-  (FamilyTree.templates.hugo_male = Object.assign(
+  (FamilyTree.templates.hugo_Mann = Object.assign(
     {},
     FamilyTree.templates.hugo
   )),
-  (FamilyTree.templates.hugo_male.node =
-    '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill=url(#hugo_grad_male) stroke="#aeaeae" rx="7" ry="7"></rect>'),
-  (FamilyTree.templates.hugo_female = Object.assign(
+  (FamilyTree.templates.hugo_Mann.node =
+    '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill=url(#hugo_grad_Mann) stroke="#aeaeae" rx="7" ry="7"></rect>'),
+  (FamilyTree.templates.hugo_Kvinne = Object.assign(
     {},
     FamilyTree.templates.hugo
   )),
-  (FamilyTree.templates.hugo_female.node =
-    '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill=url(#hugo_grad_female) stroke="#aeaeae" rx="7" ry="7"></rect>'),
+  (FamilyTree.templates.hugo_Kvinne.node =
+    '<rect x="0" y="0" height="{h}" width="{w}" stroke-width="1" fill=url(#hugo_grad_Kvinne) stroke="#aeaeae" rx="7" ry="7"></rect>'),
   (FamilyTree.templates.mother = Object.assign({}, FamilyTree.templates.base)),
   (FamilyTree.templates.mother.up = ""),
   (FamilyTree.templates.mother.node =
@@ -12981,7 +12981,7 @@ var FamilyTree = function (e, t) {
         _ft_method: "addParentNode",
         _ft_childId: e,
         _ft_type: "mid",
-        _ft_data: { gender: "female" },
+        _ft_data: { gender: "Kvinne" },
       };
       (c.mid = h.id),
         a
@@ -12997,7 +12997,7 @@ var FamilyTree = function (e, t) {
         _ft_method: "addParentNode",
         _ft_childId: e,
         _ft_type: "fid",
-        _ft_data: { gender: "male" },
+        _ft_data: { gender: "Mann" },
       };
       (c.fid = p.id),
         n
@@ -13015,10 +13015,10 @@ var FamilyTree = function (e, t) {
       _ft_data: { pids: [e] },
     };
     if (
-      ("male" == c.gender
-        ? ((f.templateName = "wife"), (f._ft_data.gender = "female"))
-        : "female" == c.gender &&
-          ((f.templateName = "husband"), (f._ft_data.gender = "male")),
+      ("Mann" == c.gender
+        ? ((f.templateName = "wife"), (f._ft_data.gender = "Kvinne"))
+        : "Kvinne" == c.gender &&
+          ((f.templateName = "husband"), (f._ft_data.gender = "Mann")),
       c.pids.push(f.id),
       m.push(f),
       c.pids)
@@ -13038,7 +13038,7 @@ var FamilyTree = function (e, t) {
               stpid: "_ft_child_group_" + s,
               templateName: "son",
               _ft_method: "addChildAndPartnerNodes",
-              _ft_childData: { mid: t.id, fid: f.id, gender: "male" },
+              _ft_childData: { mid: t.id, fid: f.id, gender: "Mann" },
               _ft_partnerData: { pids: [e] },
               _ft_id: e,
             },
@@ -13047,19 +13047,19 @@ var FamilyTree = function (e, t) {
               stpid: "_ft_child_group_" + s,
               templateName: "daughter",
               _ft_method: "addChildAndPartnerNodes",
-              _ft_childData: { mid: t.id, fid: f.id, gender: "female" },
+              _ft_childData: { mid: t.id, fid: f.id, gender: "Kvinne" },
               _ft_partnerData: { pids: [e] },
               _ft_id: e,
             };
-          "male" == c.gender && "female" == f._ft_data.gender
+          "Mann" == c.gender && "Kvinne" == f._ft_data.gender
             ? ((u._ft_childData.mid = f.id),
               (u._ft_childData.fid = c.id),
               (u._ft_partnerData.gender = f._ft_data.gender),
               (y._ft_childData.mid = f.id),
               (y._ft_childData.fid = c.id),
               (y._ft_partnerData.gender = f._ft_data.gender))
-            : "female" == c.gender &&
-              "male" == f._ft_data.gender &&
+            : "Kvinne" == c.gender &&
+              "Mann" == f._ft_data.gender &&
               ((u._ft_childData.mid = c.id),
               (u._ft_childData.fid = f.id),
               (u._ft_partnerData.gender = f._ft_data.gender),
@@ -13074,14 +13074,14 @@ var FamilyTree = function (e, t) {
             stpid: "_ft_child_group_" + s,
             templateName: "son",
             _ft_method: "addChildNode",
-            _ft_data: { mid: e, fid: c.pids[s], gender: "male" },
+            _ft_data: { mid: e, fid: c.pids[s], gender: "Mann" },
           }),
             m.push({
               id: "_ft_daughter_" + s,
               stpid: "_ft_child_group_" + s,
               templateName: "daughter",
               _ft_method: "addChildNode",
-              _ft_data: { mid: e, fid: c.pids[s], gender: "female" },
+              _ft_data: { mid: e, fid: c.pids[s], gender: "Kvinne" },
             });
         for (var g = 0; g < l.length; g++)
           (l[g].mid != c.pids[s] && l[g].fid != c.pids[s]) ||
@@ -13109,10 +13109,10 @@ var FamilyTree = function (e, t) {
         _ft_partnerData: { pids: [e] },
         _ft_id: e,
       };
-      "male" == c.gender
-        ? ((T.templateName = "wife"), (T._ft_partnerData.gender = "female"))
-        : "female" == c.gender &&
-          ((T.templateName = "husband"), (T._ft_partnerData.gender = "male")),
+      "Mann" == c.gender
+        ? ((T.templateName = "wife"), (T._ft_partnerData.gender = "Kvinne"))
+        : "Kvinne" == c.gender &&
+          ((T.templateName = "husband"), (T._ft_partnerData.gender = "Mann")),
         c.pids.push(T.id),
         m.push(T);
     }
