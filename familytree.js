@@ -260,19 +260,19 @@ var FamilyTree = function (e, t) {
       generateElementsFromFields: !0,
       focusBinding: null,
       buttons: {
-        edit: {
-          icon: FamilyTree.icon.edit(24, 24, "#fff"),
-          text: "Edit",
-          hideIfEditMode: !0,
-          hideIfDetailsMode: !1,
-        },
-        share: { icon: FamilyTree.icon.share(24, 24, "#fff"), text: "Share" },
-        pdf: { icon: FamilyTree.icon.pdf(24, 24, "#fff"), text: "Save as PDF" },
-        remove: {
-          icon: FamilyTree.icon.remove(24, 24, "#fff"),
-          text: "Remove",
-          hideIfDetailsMode: !0,
-        },
+        // edit: {
+        //   icon: FamilyTree.icon.edit(24, 24, "#fff"),
+        //   text: "Edit",
+        //   hideIfEditMode: !0,
+        //   hideIfDetailsMode: !1,
+        // },
+        // share: { icon: FamilyTree.icon.share(24, 24, "#fff"), text: "Share" },
+        // pdf: { icon: FamilyTree.icon.pdf(24, 24, "#fff"), text: "Save as PDF" },
+        // remove: {
+        //   icon: FamilyTree.icon.remove(24, 24, "#fff"),
+        //   text: "Remove",
+        //   hideIfDetailsMode: !0,
+        // },
       },
       elements: [],
     },
@@ -8824,8 +8824,9 @@ var FamilyTree = function (e, t) {
     return t;
   }),
   (FamilyTree.templates = {}),
+  //<g id="base_node_menu" style="cursor:pointer;">
   (FamilyTree.templates.base = {
-    defs: `<g transform="matrix(1,0,0,1,0,0)" id="dot"><circle class="bft-fill" cx="0" cy="0" r="5" stroke="#aeaeae" stroke-width="1"></circle></g>\n            <g id="base_node_menu" style="cursor:pointer;"><rect x="0" y="0" fill="transparent" width="22" height="22"></rect><circle cx="4" cy="11" r="2" fill="#aeaeae"></circle><circle cx="11" cy="11" r="2" fill="#aeaeae"></circle><circle cx="18" cy="11" r="2" fill="#aeaeae"></circle></g>\n            <g style="cursor: pointer;" id="base_tree_menu">\n                <rect x="0" y="0" width="25" height="25" fill="transparent"></rect>\n                ${FamilyTree.icon.addUser(
+    defs: `<g transform="matrix(1,0,0,1,0,0)" id="dot"><circle class="bft-fill" cx="0" cy="0" r="5" stroke="#aeaeae" stroke-width="1"></circle></g>\n<rect x="0" y="0" fill="transparent" width="22" height="22"></rect><circle cx="4" cy="11" r="2" fill="#aeaeae"></circle><circle cx="11" cy="11" r="2" fill="#aeaeae"></circle><circle cx="18" cy="11" r="2" fill="#aeaeae"></circle></g>\n            <g style="cursor: pointer;" id="base_tree_menu">\n                <rect x="0" y="0" width="25" height="25" fill="transparent"></rect>\n                ${FamilyTree.icon.addUser(
       25,
       25,
       "#fff",
